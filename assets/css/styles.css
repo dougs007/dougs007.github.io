@@ -21,6 +21,21 @@ h1, h2, h3, h4, h5, h6 {
   color: #778492;
 }
 
+.image-circle{
+  background-color: #aaa;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-circle img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 a {
   color: #3AAA64;
   -webkit-transition: all 0.4s ease-in-out;
