@@ -1,72 +1,218 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<!---
+          _______________________________________
+ ________|                                       |_________
+\        |                                       |        /
+ \       |           Vitality Douglas             |       /
+  \      |                                       |      /
+  /      |_______________________________________|      \
+ /___________)                               (___________\
+           - Thank you for viewing this source -
+--->
+<html lang="pt-br">
 <head>
-    <!-- Required meta tags -->
+    <title>Douglas Santana</title>
+    <!-- Meta -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Douglas Santana">
+    <meta name="author" content="Douglas Santana">
+    <link rel="shortcut icon" href="favicon.ico">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-    <title>Bootstrap 4</title>
+    <!-- FontAwesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"
+            integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9"
+            crossorigin="anonymous"></script>
 
-    <style>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
 
-        #fundo {
-            background-color: #f00;
-        }
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
 
-        .container {
-            margin-top: 50px;
-        }
-
-        .card-body {
-            padding: 50px;
-        }
-
-
-    </style>
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
 
 </head>
-<body id="fundo">
 
-<h1 style="text-align: center ; color: white">Primeria página com gitHub Pages</h1>
+<body>
+    <!-- ******HEADER****** -->
+    <header class="header">
+        <div class="container clearfix">
+            <img class="profile-image img-fluid float-left circle" src="assets/images/avatar.jpg" alt="Douglas Santana"/>
+            <div class="profile-content float-left">
+                <h1 class="name">Nome do Dev</h1>
+                <h2 class="desc">Description</h2>
+                <ul class="social list-inline">
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-github-alt"></i></a>
+                    </li>
+                    <!--<li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow"></i></a></li>-->
+                    <!--<li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>-->
+                </ul>
+            </div>
+            <a class="btn btn-cta-primary float-right" href="mailto:x@gmail.com" target="_blank">
+                <i class="fas fa-paper-plane"></i> Contato
+            </a>
+        </div>
+    </header>
 
-<div class="container">
-    <div class="card">
-        <div class="card-body">
-            <h5>GitHub é um Serviço de Web Hosting.</h5>
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">About</h2>
+                        <div class="content">
+                            <p>
+                                Intro about you
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="experience section">
+                    <div class="section-inner">
+                        <h2 class="heading">Work Xp</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Function -
+                                    <span class="place">
+                                        <a href="#">Place</a>
+                                    </span>
+                                    <span class="year">(2018 - Atual)</span>
+                                </h3>
+                                <p>Descriptcion (optional)</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="list conferences aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Workshop</h2>
+                        <div class="content">
+                            <ul style="text-align:justify" class="list-unstyled">
+                                <li>
+                                    <i class="far fa-calendar-alt"></i><span class="year">2018 - </span>
+                                    <a href="https://flisoldf.blog.br/2018/" target="_blank">
+                                        Flisol
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="github section">
+                    <div class="section-inner">
+                        <h2 class="heading">GitHub</h2>
+
+                        <div id="ghfeed" class="ghfeed">
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+            <div class="secondary col-lg-4 col-12">
+                <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Personal data</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="sr-only">Location:</span>Brasília, DF
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    <span class="sr-only">Email:</span>
+                                    <a href="#">x@gmail.com</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-mobile"></i>
+                                    <span class="sr-only">Mobile:</span><a href="#">n cellphone</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="skills aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <div class="skillset">
+                                <div class="item">
+                                    <h3 class="level-title">Javascript &amp; jQuery
+                                        <span class="level-label" data-toggle="tooltip"
+                                              data-placement="left" data-animation="true"
+                                              title="description">
+                                            <i class="fas fa-info-circle"></i>Intermediário
+                                        </span>
+                                    </h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="60%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="languages aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">languages</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title">
+                                        <strong>Inglês:</strong>
+                                    </span>
+                                    <span class="level">Native <br class="visible-sm visible-xs"/>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
         </div>
     </div>
-    <div class="card" style="background-color: #ccc">
-        <div class="card-body">
-            <h5>Compartilhado para projetos que usam o controle de versionamento Git.</h5>
-        </div>
-    </div>
-    <div class="card" style="background-color: hsl(0, 0%, 47%)">
-        <div class="card-body">
-            <h5>É escrito em Ruby on Rails pelos desenvolvedores da Logical Awesome.</h5>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-body">
-            <h5>O GitHub possui planos comerciais e gratuitos para projetos de código aberto.</h5>
-        </div>
-    </div>
-</div>
 
+    <!-- ******FOOTER****** -->
+    <footer class="footer">
+        <div class="container text-center">
+            <small class="copyright">Designed with <i class="fas fa-heart"></i> by
+                <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a>
+                and developed by <a href="https://github.com/dougs007" target="_blank">Douglas</a>
+            </small>
+        </div>
+    </footer>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
